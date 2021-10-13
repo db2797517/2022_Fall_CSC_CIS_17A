@@ -67,9 +67,9 @@ void markSrt(DBOrder *a){
     for(int pos=0;pos<a->data->size-1;pos++){//Works on each position in the list
         for(int i=pos+1;i<a->data->size;i++){//Compare and swap with lower elements in the list
             if(a->data->array[a->index->array[pos]]
-                    >a->data->array[a->index->array[i]]){//Swap
+                    > a->data->array[a->index->array[i]]){//Swap
                 a->index->array[pos]=a->index->array[pos]^a->index->array[i];
-                a->index->array[i]=a->index->array[pos]^a->index->array[i];
+                a->index->array[i]  =a->index->array[pos]^a->index->array[i];
                 a->index->array[pos]=a->index->array[pos]^a->index->array[i];
             }
         }
@@ -86,16 +86,15 @@ void prntAry(DBOrder *a,int perLine){
 }
 
 DBOrder *fillAry(int n){
-    DBOrder *dbOrder=new DBOrder;
-    n=n<2?2:n;
-    cout<<"n="<<n<<endl;
-    dbOrder->data=new Array;
-    dbOrder->data->size=n;
-    dbOrder->data->array=new int[n];
-    dbOrder->index=new Array;
-    dbOrder->index->size=n;
-    dbOrder->index->array=new int[n];
-    for(int i=0;i<n;i++){
+    n=n<2?2:n;//Arrays must be 2 or larger
+    DBOrder *dbOrder=new DBOrder;//Single Structure DBOrder
+    dbOrder->data=new Array;     //Single Structure Array
+    dbOrder->data->size=n;       //Data array size
+    dbOrder->data->array=new int[n];//Data array allocate
+    dbOrder->index=new Array;    //Single Structure Index
+    dbOrder->index->size=n;      //Index same size as Data
+    dbOrder->index->array=new int[n];//Index array allocation
+    for(int i=0;i<n;i++){//Fill the Arrays
         dbOrder->data->array[i]=rand()%90+10;//[10,99]
         dbOrder->index->array[i]=i;
     }
