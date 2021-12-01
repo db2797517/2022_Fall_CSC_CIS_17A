@@ -44,6 +44,13 @@ public:
 
    // Overloaded [] operator declaration
    T &operator[](const int &);
+   
+   //Resize either by adding 1 to the front or back, or deleting from
+   //the front or back.  If deleting then return what you popped off.
+   void pshFrnt(T);
+   void pshBack(T);
+   T popFrnt();
+   T popBack();
 };
 
 //***********************************************************

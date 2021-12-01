@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Debug=simplevector
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/simplevector
+CND_ARTIFACT_NAME_Debug=simplevector_modify_for_resizing
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/simplevector_modify_for_resizing
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_1-Windows/package
-CND_PACKAGE_NAME_Debug=simplevector.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/simplevector.tar
+CND_PACKAGE_NAME_Debug=simplevectormodifyforresizing.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/simplevectormodifyforresizing.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Release=simplevector
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/simplevector
+CND_ARTIFACT_NAME_Release=simplevector_modify_for_resizing
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/simplevector_modify_for_resizing
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_1-Windows/package
-CND_PACKAGE_NAME_Release=simplevector.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/simplevector.tar
+CND_PACKAGE_NAME_Release=simplevectormodifyforresizing.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/simplevectormodifyforresizing.tar
 #
 # include compiler specific variables
 #
