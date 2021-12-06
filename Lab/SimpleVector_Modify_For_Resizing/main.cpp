@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
     //Fill the Vector
     fillVec(sv);
     
-    //Prchar the Vector
+    //Print the Vector
     cout<<"Original Random Dynamic Array derived Simple Vector"<<endl;
     prntVec(sv,10);
     

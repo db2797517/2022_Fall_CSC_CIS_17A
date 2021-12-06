@@ -27,16 +27,31 @@ int main(int argc, char** argv) {
     //Fill the Vector
     fillVec(sv);
     
-    //Prchar the Vector
+    //Print the Vector
     cout<<"Original Random Dynamic Array derived Simple Vector"<<endl;
     prntVec(sv,10);
     
     //Copy the Vector
     SimpleVector<unsigned char> copysv(sv);
+    copysv.pshBack('M');
+    copysv.pshBack('E');
+    copysv.pshBack('L');
+    copysv.pshBack('Z');
+    copysv.pshFrnt('L');
+    copysv.pshFrnt('E');
+    copysv.pshFrnt('M');
+    copysv.pshFrnt('X');
     
     //Print the Vector
-    cout<<"Copied Random Dynamic Array derived Simple Vector"<<endl;
+    cout<<"Copied Random Dynamic Array derived Simple Vector with Push Values"<<endl;
     prntVec(copysv,10);
+    
+    //Print the Vector
+    cout<<endl<<"Copied Random Dynamic Array derived Simple Vector Popped Values"<<endl;
+    cout<<"Value Popped off from back  = "<<copysv.popBack()<<endl;
+    cout<<"Value Popped off from front = "<<copysv.popFrnt()<<endl;
+    prntVec(copysv,10);
+    cout<<"ArraySize = "<<copysv.size()<<endl;
 
     return 0;
 }

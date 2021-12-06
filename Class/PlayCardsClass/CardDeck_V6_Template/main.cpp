@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
         for(int i=0;i<nDeal;i++){
             CardPic card(hand[i],".jpg");
             cout<<setw(2)<<hand[i]<<" "<<card.face()<<card.suit()<<" "
-                 <<setw(2)<<static_cast<int>(card.value())<<endl;
+                  <<setw(2)<<static_cast<int>(card.value())<<endl;
         }
         delete []hand;
     }
